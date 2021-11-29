@@ -1,0 +1,19 @@
+{
+  "name": "@soramitsukhmer/codex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/soramitsukhmer/codex.git",
+  "author": "Socheat Sok <alex@socheat.net>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "zx scripts/build-countrycodes.mjs && zx scripts/build-currency.mjs",
+    "build": "tsc src/index.ts -d --outDir dist"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "@socheatsok78/tsconfig": "^0.1.0",
+    "zx": "^4.2.0"
+  }
+}
