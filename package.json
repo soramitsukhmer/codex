@@ -2,7 +2,7 @@
   "name": "@soramitsukhmer/codex",
   "version": "0.0.3",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "repository": "https://github.com/soramitsukhmer/codex.git",
   "author": "Socheat Sok <alex@socheat.net>",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "types": "types"
   },
   "scripts": {
-    "prebuild": "zx scripts/build-countrycodes.mjs && zx scripts/build-currency.mjs",
-    "build": "tsc src/index.ts -d --outDir dist"
+    "prebuild": "bash ./scripts/workflow.sh",
+    "build": "bash ./scripts/build.sh"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
