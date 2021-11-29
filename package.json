@@ -1,7 +1,8 @@
 {
   "name": "@soramitsukhmer/codex",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/soramitsukhmer/codex.git",
   "author": "Socheat Sok <alex@socheat.net>",
   "license": "MIT",
