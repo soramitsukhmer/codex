@@ -6,6 +6,14 @@
   "repository": "https://github.com/soramitsukhmer/codex.git",
   "author": "Socheat Sok <alex@socheat.net>",
   "license": "MIT",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "directories": {
+    "lib": "dist",
+    "types": "types"
+  },
   "scripts": {
     "prebuild": "zx scripts/build-countrycodes.mjs && zx scripts/build-currency.mjs",
     "build": "tsc src/index.ts -d --outDir dist"
