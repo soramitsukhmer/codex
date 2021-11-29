@@ -507,7 +507,7 @@
         "symbol": "KHR",
         "name": "Cambodian Riel",
         "symbol_native": "៛",
-        "decimal_digits": 2,
+        "decimal_digits": 0,
         "rounding": 0,
         "code": "KHR",
         "name_plural": "Cambodian riels"
