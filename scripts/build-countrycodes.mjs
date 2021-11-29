@@ -12,7 +12,7 @@ const interfaceSource = `export interface CountryCode {
     code: string
 }`
 
-console.log(chalk.blue('Building country-codes.ts...'))
+console.log(chalk.blue('Building country codes...'))
 
 const generateExport = (code, source) => `export const ${code}: CountryCode = ${JSON.stringify(source)};`
 const lines = [interfaceSource]
@@ -21,6 +21,6 @@ codes.forEach(item => {
     lines.push(generateExport(item.code, item))
 })
 
-fs.writeFileSync('./src/country-codes.ts', lines.join('\n'), { encoding: 'utf8' })
+fs.writeFileSync('./src/country/index.ts', lines.join('\n'), { encoding: 'utf8' })
 
-console.log(chalk.green('Successfully generated country-codes.ts!'))
+console.log(chalk.green('Successfully generated country codes!'))

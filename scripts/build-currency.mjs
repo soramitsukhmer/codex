@@ -13,7 +13,7 @@ const interfaceSource = `export interface Currency {
     name_plural: string
 }`
 
-console.log(chalk.blue('Building common-currency.ts...'))
+console.log(chalk.blue('Building common currency...'))
 
 const generateExport = (code, source) => `export const ${code}: Currency = ${JSON.stringify(source)};`
 const lines = [interfaceSource]
@@ -22,5 +22,5 @@ Object.keys(currency).forEach(key => {
     lines.push(generateExport(key, currency[key]))
 })
 
-fs.writeFileSync('./src/common-currency.ts', lines.join('\n'), { encoding: 'utf8'})
-console.log(chalk.green('Successfully generated common-currency.ts!'))
+fs.writeFileSync('./src/currency/index.ts', lines.join('\n'), { encoding: 'utf8'})
+console.log(chalk.green('Successfully generated common currency!'))
