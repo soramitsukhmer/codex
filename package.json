@@ -8,10 +8,14 @@
   "license": "MIT",
   "files": [
     "dist",
+    "country",
+    "currency",
     "types"
   ],
   "directories": {
     "lib": "dist",
+    "country": "country",
+    "currency": "currency",
     "types": "types"
   },
   "scripts": {
