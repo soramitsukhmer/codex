@@ -1,4 +1,4 @@
-# codex
+# @soramitsukhmer/codex
 The Soramitsu Khmer Codex repo
 
 ## List
