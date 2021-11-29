@@ -1,2 +1,2 @@
 export * as CountryCodes from './country'
-export * as CommonCurrencies from './currency'
+export * as CurrenciesCodes from './currency'
