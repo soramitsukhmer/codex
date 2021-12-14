@@ -13,6 +13,7 @@ yarn add @soramitsukhmer/codex
 
 - [Country Codes](#country-codes)
 - [Currency Codes](#country-codes)
+- [Phone number Mask](#phone-number-mask)
 
 ## References
 
@@ -63,7 +64,9 @@ console.log(KHR)
  */
 ```
 
-> Credit: https://gist.github.com/Fluidbyte/2973986
+> Credits: 
+> - Common Currency Codes: https://gist.github.com/Fluidbyte/2973986
+> - Phone Number Mask: [surajmathe/intl-input-phone](https://github.com/surajmathe/intl-input-phone/blob/master/projects/intl-input-phone/src/lib/intl-input-phone.service.ts)
 
 ## License
 
